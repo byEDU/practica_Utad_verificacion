@@ -55,8 +55,6 @@ class Controler:
                                                 $$ |
                                                 \__|
             '''
-	print"Juego para dos jugadores donde pierde quien elimine el ultimo palito, en cada turno puedes eliminar el numero que quieras de palitos de UNA fila."
-	print"En cada jugada introduce el numero de fila y el numero de palitos. Mucha suerte!"
         raw_input("Press Enter to continue....")
         self.board.paint()
         while(not self.isGameFinished):
