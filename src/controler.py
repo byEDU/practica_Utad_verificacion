@@ -98,23 +98,24 @@ class Controler:
             winner = self.gameFinished()
         self.changeTurn()
         self.insertResultadoPartido(winner)
+
     def insertResultadoPartido(self,winner):
         aux = {}
         connection = DbConnection("baseDatosPalitos", "Partidos")
         if winner == 1:
             print "HA GANADO " + self.player1Name
             aux = {'Ganador': self.player1Name, 'Perdedor' : self.player2Name}
-            connection.dbs.insert_one(aux).inserted_id
+            print connection.dbs.insert_one(aux).inserted_id
         elif winner == 2:
             print "HA GANADO " + self.player2Name
             aux = {'Ganador': self.player2Name, 'Perdedor' : self.player1Name}
             connection.dbs.insert_one(aux).inserted_id
+
     def showHistory(self):
         num = 0
         aux = {}
         aux =  Controler.query([{'$match': {}}])
         aux2 =  Controler.query([{'$match': {}}])
-
         for partida in aux:
             num += 1
         print "Se han jugado " + str(num) + " partidas:"
