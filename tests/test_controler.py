@@ -28,21 +28,21 @@ class TestController(TestCase):
         #m.insertResultadoPartido = mock.MagicMock(return_value="insertedID")
         self.assertIsNotNone(m.insertResultadoPartido(winner))
 
-    '''
-    def test_insertIsNotNoneWinner2(self):
-        m = Controler()
-        m.player2Name = 'Juan'
-        conex = DbConnection("baseDatosPalitos","Partidos")
-        conex.client = mongomock.MongoClient()
-        winner = 1
-        #m.insertResultadoPartido = mock.MagicMock(return_value="insertedID")
-        self.assertIsNotNone(m.insertResultadoPartido(winner))
-
-
-
     def test_showHistory(self):
-        m = Controler()
-        m.showHistory = mock.MagicMock({'Ganador':'Ermidio','Perdedor' : 'Juanillo'})
-        self.assertEquals(m.showHistory(), None)
+        m = self.controler
+        aux = mock.MagicMock({'Ganador': 'Amancio', 'Perdedor': 'Francisco'})
+        listaAuxiliar = []
+        for partida in aux:
+            listaAuxiliar.append("Ganador: " + partida['Ganador'] + " Perdedor: " + partida['Perdedor'])
+        self.assertTrue(len(listaAuxiliar) == 0)
 
-'''
+
+    def test_numPartidasJugadas(self):
+        m = self.controler
+
+        numPartidas = 0
+        aux = mock.MagicMock({'Ganador': 'Amancio', 'Perdedor': 'Francisco'})
+        for partida in aux:
+            numPartidas += 1
+
+        self.assertEquals(numPartidas, 0)

@@ -1,0 +1,1022 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Coverage report</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.debounce.min.js"></script>
+    <script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="coverage_html.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(coverage.index_ready);
+    </script>
+</head>
+<body class="indexfile">
+
+<div id="header">
+    <div class="content">
+        <h1>Coverage report:
+            <span class="pc_cov">35%</span>
+        </h1>
+
+        <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
+
+        <form id="filter_container">
+            <input id="filter" type="text" value="" placeholder="filter..." />
+        </form>
+    </div>
+</div>
+
+<div class="help_panel">
+    <img id="panel_icon" src="keybd_open.png" alt="Hide keyboard shortcuts" />
+    <p class="legend">Hot-keys on this page</p>
+    <div>
+    <p class="keyhelp">
+        <span class="key">n</span>
+        <span class="key">s</span>
+        <span class="key">m</span>
+        <span class="key">x</span>
+        
+        <span class="key">c</span> &nbsp; change column sorting
+    </p>
+    </div>
+</div>
+
+<div id="index">
+    <table class="index">
+        <thead>
+            
+            <tr class="tablehead" title="Click to sort">
+                <th class="name left headerSortDown shortkey_n">Module</th>
+                <th class="shortkey_s">statements</th>
+                <th class="shortkey_m">missing</th>
+                <th class="shortkey_x">excluded</th>
+                
+                <th class="right shortkey_c">coverage</th>
+            </tr>
+        </thead>
+        
+        <tfoot>
+            <tr class="total">
+                <td class="name left">Total</td>
+                <td>14235</td>
+                <td>9271</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="4964 14235">35%</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            
+            <tr class="file">
+                <td class="name left"><a href="practica_Utad_verificacion_src___init___py.html">practica_Utad_verificacion/src/__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="practica_Utad_verificacion_src_board_py.html">practica_Utad_verificacion/src/board.py</a></td>
+                <td>63</td>
+                <td>54</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="9 63">14%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="practica_Utad_verificacion_src_controler_py.html">practica_Utad_verificacion/src/controler.py</a></td>
+                <td>100</td>
+                <td>69</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="31 100">31%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="practica_Utad_verificacion_src_dbconnection_py.html">practica_Utad_verificacion/src/dbconnection.py</a></td>
+                <td>5</td>
+                <td>2</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="3 5">60%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="practica_Utad_verificacion_tests_test_controler_py.html">practica_Utad_verificacion/tests/test_controler.py</a></td>
+                <td>38</td>
+                <td>2</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="36 38">95%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_bson___init___py.html">virtualEnv/lib/python2.7/site-packages/bson/__init__.py</a></td>
+                <td>477</td>
+                <td>275</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="202 477">42%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_bson_binary_py.html">virtualEnv/lib/python2.7/site-packages/bson/binary.py</a></td>
+                <td>58</td>
+                <td>28</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="30 58">52%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_bson_code_py.html">virtualEnv/lib/python2.7/site-packages/bson/code.py</a></td>
+                <td>30</td>
+                <td>19</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="11 30">37%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_bson_codec_options_py.html">virtualEnv/lib/python2.7/site-packages/bson/codec_options.py</a></td>
+                <td>33</td>
+                <td>11</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="22 33">67%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_bson_dbref_py.html">virtualEnv/lib/python2.7/site-packages/bson/dbref.py</a></td>
+                <td>52</td>
+                <td>34</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="18 52">35%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_bson_errors_py.html">virtualEnv/lib/python2.7/site-packages/bson/errors.py</a></td>
+                <td>6</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="6 6">100%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_bson_int64_py.html">virtualEnv/lib/python2.7/site-packages/bson/int64.py</a></td>
+                <td>6</td>
+                <td>1</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="5 6">83%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_bson_json_util_py.html">virtualEnv/lib/python2.7/site-packages/bson/json_util.py</a></td>
+                <td>131</td>
+                <td>105</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="26 131">20%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_bson_max_key_py.html">virtualEnv/lib/python2.7/site-packages/bson/max_key.py</a></td>
+                <td>19</td>
+                <td>8</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="11 19">58%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_bson_min_key_py.html">virtualEnv/lib/python2.7/site-packages/bson/min_key.py</a></td>
+                <td>19</td>
+                <td>8</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="11 19">58%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_bson_objectid_py.html">virtualEnv/lib/python2.7/site-packages/bson/objectid.py</a></td>
+                <td>113</td>
+                <td>54</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="59 113">52%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_bson_py3compat_py.html">virtualEnv/lib/python2.7/site-packages/bson/py3compat.py</a></td>
+                <td>48</td>
+                <td>26</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="22 48">46%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_bson_raw_bson_py.html">virtualEnv/lib/python2.7/site-packages/bson/raw_bson.py</a></td>
+                <td>33</td>
+                <td>16</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="17 33">52%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_bson_regex_py.html">virtualEnv/lib/python2.7/site-packages/bson/regex.py</a></td>
+                <td>45</td>
+                <td>31</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="14 45">31%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_bson_son_py.html">virtualEnv/lib/python2.7/site-packages/bson/son.py</a></td>
+                <td>123</td>
+                <td>74</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="49 123">40%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_bson_timestamp_py.html">virtualEnv/lib/python2.7/site-packages/bson/timestamp.py</a></td>
+                <td>55</td>
+                <td>35</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="20 55">36%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_bson_tz_util_py.html">virtualEnv/lib/python2.7/site-packages/bson/tz_util.py</a></td>
+                <td>19</td>
+                <td>3</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="16 19">84%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_funcsigs___init___py.html">virtualEnv/lib/python2.7/site-packages/funcsigs/__init__.py</a></td>
+                <td>432</td>
+                <td>357</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="75 432">17%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_funcsigs_version_py.html">virtualEnv/lib/python2.7/site-packages/funcsigs/version.py</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="1 1">100%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_mock___init___py.html">virtualEnv/lib/python2.7/site-packages/mock/__init__.py</a></td>
+                <td>4</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="4 4">100%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_mock_mock_py.html">virtualEnv/lib/python2.7/site-packages/mock/mock.py</a></td>
+                <td>1373</td>
+                <td>940</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="433 1373">32%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_mongomock___init___py.html">virtualEnv/lib/python2.7/site-packages/mongomock/__init__.py</a></td>
+                <td>47</td>
+                <td>24</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="23 47">49%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_mongomock___version___py.html">virtualEnv/lib/python2.7/site-packages/mongomock/__version__.py</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="1 1">100%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_mongomock_collection_py.html">virtualEnv/lib/python2.7/site-packages/mongomock/collection.py</a></td>
+                <td>1050</td>
+                <td>896</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="154 1050">15%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_mongomock_command_cursor_py.html">virtualEnv/lib/python2.7/site-packages/mongomock/command_cursor.py</a></td>
+                <td>26</td>
+                <td>15</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="11 26">42%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_mongomock_database_py.html">virtualEnv/lib/python2.7/site-packages/mongomock/database.py</a></td>
+                <td>58</td>
+                <td>37</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="21 58">36%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_mongomock_filtering_py.html">virtualEnv/lib/python2.7/site-packages/mongomock/filtering.py</a></td>
+                <td>93</td>
+                <td>75</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="18 93">19%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_mongomock_helpers_py.html">virtualEnv/lib/python2.7/site-packages/mongomock/helpers.py</a></td>
+                <td>91</td>
+                <td>61</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="30 91">33%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_mongomock_mongo_client_py.html">virtualEnv/lib/python2.7/site-packages/mongomock/mongo_client.py</a></td>
+                <td>59</td>
+                <td>26</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="33 59">56%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_mongomock_results_py.html">virtualEnv/lib/python2.7/site-packages/mongomock/results.py</a></td>
+                <td>49</td>
+                <td>44</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="5 49">10%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_mongomock_write_concern_py.html">virtualEnv/lib/python2.7/site-packages/mongomock/write_concern.py</a></td>
+                <td>3</td>
+                <td>1</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="2 3">67%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pbr___init___py.html">virtualEnv/lib/python2.7/site-packages/pbr/__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pbr_version_py.html">virtualEnv/lib/python2.7/site-packages/pbr/version.py</a></td>
+                <td>213</td>
+                <td>114</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="99 213">46%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pkg_resources___init___py.html">virtualEnv/lib/python2.7/site-packages/pkg_resources/__init__.py</a></td>
+                <td>1607</td>
+                <td>985</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="622 1607">39%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pkg_resources__vendor___init___py.html">virtualEnv/lib/python2.7/site-packages/pkg_resources/_vendor/__init__.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pkg_resources__vendor_packaging___about___py.html">virtualEnv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/__about__.py</a></td>
+                <td>10</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="10 10">100%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pkg_resources__vendor_packaging___init___py.html">virtualEnv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/__init__.py</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="3 3">100%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pkg_resources__vendor_packaging__compat_py.html">virtualEnv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/_compat.py</a></td>
+                <td>12</td>
+                <td>1</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="11 12">92%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pkg_resources__vendor_packaging__structures_py.html">virtualEnv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/_structures.py</a></td>
+                <td>41</td>
+                <td>17</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="24 41">59%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pkg_resources__vendor_packaging_specifiers_py.html">virtualEnv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/specifiers.py</a></td>
+                <td>269</td>
+                <td>184</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="85 269">32%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pkg_resources__vendor_packaging_version_py.html">virtualEnv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/version.py</a></td>
+                <td>148</td>
+                <td>74</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="74 148">50%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo___init___py.html">virtualEnv/lib/python2.7/site-packages/pymongo/__init__.py</a></td>
+                <td>31</td>
+                <td>6</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="25 31">81%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_auth_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/auth.py</a></td>
+                <td>221</td>
+                <td>171</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="50 221">23%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_bulk_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/bulk.py</a></td>
+                <td>280</td>
+                <td>220</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="60 280">21%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_client_options_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/client_options.py</a></td>
+                <td>96</td>
+                <td>11</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="85 96">89%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_collection_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/collection.py</a></td>
+                <td>622</td>
+                <td>516</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="106 622">17%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_command_cursor_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/command_cursor.py</a></td>
+                <td>112</td>
+                <td>89</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="23 112">21%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_common_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/common.py</a></td>
+                <td>246</td>
+                <td>148</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="98 246">40%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_cursor_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/cursor.py</a></td>
+                <td>491</td>
+                <td>423</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="68 491">14%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_cursor_manager_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/cursor_manager.py</a></td>
+                <td>10</td>
+                <td>3</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="7 10">70%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_database_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/database.py</a></td>
+                <td>348</td>
+                <td>258</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="90 348">26%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_errors_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/errors.py</a></td>
+                <td>42</td>
+                <td>10</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="32 42">76%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_helpers_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/helpers.py</a></td>
+                <td>157</td>
+                <td>129</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="28 157">18%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_ismaster_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/ismaster.py</a></td>
+                <td>64</td>
+                <td>13</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="51 64">80%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_message_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/message.py</a></td>
+                <td>460</td>
+                <td>358</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="102 460">22%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_mongo_client_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/mongo_client.py</a></td>
+                <td>359</td>
+                <td>234</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="125 359">35%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_mongo_replica_set_client_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/mongo_replica_set_client.py</a></td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="6 9">67%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_monitor_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/monitor.py</a></td>
+                <td>73</td>
+                <td>22</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="51 73">70%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_monitoring_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/monitoring.py</a></td>
+                <td>125</td>
+                <td>78</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="47 125">38%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_monotonic_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/monotonic.py</a></td>
+                <td>13</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="13 13">100%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_network_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/network.py</a></td>
+                <td>97</td>
+                <td>58</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="39 97">40%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_operations_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/operations.py</a></td>
+                <td>71</td>
+                <td>35</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="36 71">51%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_periodic_executor_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/periodic_executor.py</a></td>
+                <td>71</td>
+                <td>26</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="45 71">63%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_pool_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/pool.py</a></td>
+                <td>276</td>
+                <td>114</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="162 276">59%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_read_concern_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/read_concern.py</a></td>
+                <td>25</td>
+                <td>13</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="12 25">48%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_read_preferences_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/read_preferences.py</a></td>
+                <td>119</td>
+                <td>45</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="74 119">62%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_response_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/response.py</a></td>
+                <td>29</td>
+                <td>15</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="14 29">48%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_results_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/results.py</a></td>
+                <td>78</td>
+                <td>38</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="40 78">51%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_server_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/server.py</a></td>
+                <td>77</td>
+                <td>49</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="28 77">36%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_server_description_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/server_description.py</a></td>
+                <td>69</td>
+                <td>18</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="51 69">74%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_server_selectors_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/server_selectors.py</a></td>
+                <td>38</td>
+                <td>25</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="13 38">34%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_server_type_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/server_type.py</a></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="3 3">100%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_settings_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/settings.py</a></td>
+                <td>44</td>
+                <td>5</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="39 44">89%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_son_manipulator_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/son_manipulator.py</a></td>
+                <td>67</td>
+                <td>46</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="21 67">31%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_ssl_context_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/ssl_context.py</a></td>
+                <td>27</td>
+                <td>14</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="13 27">48%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_ssl_support_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/ssl_support.py</a></td>
+                <td>73</td>
+                <td>44</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="29 73">40%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_thread_util_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/thread_util.py</a></td>
+                <td>80</td>
+                <td>28</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="52 80">65%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_topology_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/topology.py</a></td>
+                <td>181</td>
+                <td>106</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="75 181">41%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_topology_description_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/topology_description.py</a></td>
+                <td>133</td>
+                <td>82</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="51 133">38%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_uri_parser_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/uri_parser.py</a></td>
+                <td>146</td>
+                <td>111</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="35 146">24%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_pymongo_write_concern_py.html">virtualEnv/lib/python2.7/site-packages/pymongo/write_concern.py</a></td>
+                <td>40</td>
+                <td>22</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="18 40">45%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_sentinels___init___py.html">virtualEnv/lib/python2.7/site-packages/sentinels/__init__.py</a></td>
+                <td>31</td>
+                <td>8</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="23 31">74%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_sentinels___version___py.html">virtualEnv/lib/python2.7/site-packages/sentinels/__version__.py</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="1 1">100%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="virtualEnv_lib_python2_7_site-packages_six_py.html">virtualEnv/lib/python2.7/site-packages/six.py</a></td>
+                <td>444</td>
+                <td>220</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="224 444">50%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="_usr_lib_pycharm_helpers_pycharm_nose_helper__2_py.html">/usr/lib/pycharm/helpers/pycharm/nose_helper/_2.py</a></td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="1 2">50%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="_usr_lib_pycharm_helpers_pycharm_nose_helper___init___py.html">/usr/lib/pycharm/helpers/pycharm/nose_helper/__init__.py</a></td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="2 2">100%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="_usr_lib_pycharm_helpers_pycharm_nose_helper_case_py.html">/usr/lib/pycharm/helpers/pycharm/nose_helper/case.py</a></td>
+                <td>157</td>
+                <td>116</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="41 157">26%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="_usr_lib_pycharm_helpers_pycharm_nose_helper_config_py.html">/usr/lib/pycharm/helpers/pycharm/nose_helper/config.py</a></td>
+                <td>19</td>
+                <td>5</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="14 19">74%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="_usr_lib_pycharm_helpers_pycharm_nose_helper_failure_py.html">/usr/lib/pycharm/helpers/pycharm/nose_helper/failure.py</a></td>
+                <td>15</td>
+                <td>8</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="7 15">47%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="_usr_lib_pycharm_helpers_pycharm_nose_helper_loader_py.html">/usr/lib/pycharm/helpers/pycharm/nose_helper/loader.py</a></td>
+                <td>145</td>
+                <td>108</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="37 145">26%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="_usr_lib_pycharm_helpers_pycharm_nose_helper_raise_compat_py.html">/usr/lib/pycharm/helpers/pycharm/nose_helper/raise_compat.py</a></td>
+                <td>4</td>
+                <td>2</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="2 4">50%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="_usr_lib_pycharm_helpers_pycharm_nose_helper_selector_py.html">/usr/lib/pycharm/helpers/pycharm/nose_helper/selector.py</a></td>
+                <td>53</td>
+                <td>38</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="15 53">28%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="_usr_lib_pycharm_helpers_pycharm_nose_helper_suite_py.html">/usr/lib/pycharm/helpers/pycharm/nose_helper/suite.py</a></td>
+                <td>247</td>
+                <td>172</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="75 247">30%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="_usr_lib_pycharm_helpers_pycharm_nose_helper_util_py.html">/usr/lib/pycharm/helpers/pycharm/nose_helper/util.py</a></td>
+                <td>145</td>
+                <td>113</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="32 145">22%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="_usr_lib_pycharm_helpers_pycharm_pycharm_run_utils_py.html">/usr/lib/pycharm/helpers/pycharm/pycharm_run_utils.py</a></td>
+                <td>33</td>
+                <td>9</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="24 33">73%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="_usr_lib_pycharm_helpers_pycharm_tcmessages_py.html">/usr/lib/pycharm/helpers/pycharm/tcmessages.py</a></td>
+                <td>63</td>
+                <td>15</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="48 63">76%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="_usr_lib_pycharm_helpers_pycharm_tcunittest_py.html">/usr/lib/pycharm/helpers/pycharm/tcunittest.py</a></td>
+                <td>195</td>
+                <td>106</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="89 195">46%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="_usr_lib_pycharm_helpers_pycharm_utrunner_py.html">/usr/lib/pycharm/helpers/pycharm/utrunner.py</a></td>
+                <td>113</td>
+                <td>58</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="55 113">49%</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <p id="no_rows">
+        No items found using the specified filter.
+    </p>
+</div>
+
+<div id="footer">
+    <div class="content">
+        <p>
+            <a class="nav" href="https://coverage.readthedocs.org">coverage.py v4.0.3</a>,
+            created at 2016-04-07 15:19
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

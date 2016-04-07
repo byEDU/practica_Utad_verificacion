@@ -61,8 +61,10 @@ class Controler:
             self.player2Name = raw_input('Introduce el nombre del jugador 2:')
             self.play()
         elif eleccion == 2:
-            self.showHistory()
-
+            print self.numPartidasJugadas()
+            lista = self.showHistory()
+            for x in lista:
+                print x
         elif eleccion == 3:
             print 'Hasta Luego!!'
             self.exit = True
@@ -112,23 +114,20 @@ class Controler:
             aux = {'Ganador': self.player2Name, 'Perdedor' : self.player1Name}
             return self.dbs.insert_one(aux).inserted_id
 
-    def showHistory(self):
+    def numPartidasJugadas(self):
         num = 0
-        aux = {}
-        aux =  Controler.query([{'$match': {}}])
-        aux2 =  Controler.query([{'$match': {}}])
+        aux = self.dbs.find()
         for partida in aux:
             num += 1
-        print "Se han jugado " + str(num) + " partidas:"
-        for partida in aux2:
-            print "Ganador: " + partida['Ganador'] + " Perdedor: " + partida['Perdedor']
-
-    def query(self,sentencia = ''):
-        cursor = self.dbs.aggregate(sentencia)
-        if cursor.alive:
-            return cursor
-        else:
-            return None
+        return "Se han jugado " + str(num) + " partidas:"
+    def showHistory(self):
+        aux = {}
+        aux =  self.dbs.find()
+        print aux
+        listaAuxiliar = []
+        for partida in aux:
+            listaAuxiliar.append( "Ganador: " + partida['Ganador'] + " Perdedor: " + partida['Perdedor'])
+        return listaAuxiliar
 
 
 
