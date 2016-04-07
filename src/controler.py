@@ -1,6 +1,6 @@
 from random import randint
 from board import Board
-from dbconnection import DbConnection
+from pymongo import MongoClient
 
 class Controler:
     def __init__(self):
@@ -10,6 +10,8 @@ class Controler:
         self.isGameFinished = False
         self.player1Name = ''
         self.player2Name = ''
+        self.client = MongoClient('localhost', 27017)
+        self.dbs = self.client["baseDatosPalitos"]["Partidos"]
     def changeTurn(self):
         if self.turn == 1:
             self.turn = 2
@@ -101,15 +103,14 @@ class Controler:
 
     def insertResultadoPartido(self,winner):
         aux = {}
-        connection = DbConnection("baseDatosPalitos", "Partidos")
         if winner == 1:
             print "HA GANADO " + self.player1Name
             aux = {'Ganador': self.player1Name, 'Perdedor' : self.player2Name}
-            print connection.dbs.insert_one(aux).inserted_id
+            return self.dbs.insert_one(aux).inserted_id
         elif winner == 2:
             print "HA GANADO " + self.player2Name
             aux = {'Ganador': self.player2Name, 'Perdedor' : self.player1Name}
-            connection.dbs.insert_one(aux).inserted_id
+            return self.dbs.insert_one(aux).inserted_id
 
     def showHistory(self):
         num = 0
@@ -121,10 +122,9 @@ class Controler:
         print "Se han jugado " + str(num) + " partidas:"
         for partida in aux2:
             print "Ganador: " + partida['Ganador'] + " Perdedor: " + partida['Perdedor']
-    @staticmethod
-    def query(sentencia = ''):
-        connection = DbConnection("baseDatosPalitos", "Partidos")
-        cursor = connection.dbs.aggregate(sentencia)
+
+    def query(self,sentencia = ''):
+        cursor = self.dbs.aggregate(sentencia)
         if cursor.alive:
             return cursor
         else:
